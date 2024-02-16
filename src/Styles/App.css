@@ -1,0 +1,247 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+/*-- Home-Page-Styling --*/
+body{
+  background: url('../Assets/Images/port-g58fa1a915_1280.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.main-container{
+  /* border: 2px solid red; */
+  width: 65%;
+  height: 80vh;
+  margin: 50px auto;
+  background-color: rgba(0, 0, 0, 0.73);
+}
+
+.app-container{
+  /* border: 2px solid blue; */
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.city{
+  /* border: 2px solid red; */
+  width: 60%;
+  height: 100%;
+  /* float: left; */
+  background: url('../Assets/Images/singapore-g06f543db9_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /* min-height: 500px;
+  background-position-x: -30px; */
+}
+
+.city .title{
+  /* border: 2px solid red; */
+  float: right;
+  font-family: "Oxygen", sans-serif;
+  padding: 30px 30px 0 0;
+}
+
+.city .title h2{
+  color: #FFF;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.city .title h3{
+  font-size: 25px;
+  color: #EEE;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: center;
+}
+
+.city .date-time{
+  /* border: 2px solid red; */
+  position: absolute;
+  color: #FFF;
+  bottom: 0;
+  width: 90%;
+  padding: 0px 30px 20px 30px;
+  font-family: "Oxygen", sans-serif;
+}
+
+div #txt {
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.city .date-time .dmy{
+  /* border: 2px solid purple; */
+  float: left;
+  text-align: left;
+  position: absolute;
+}
+
+.city .date-time .dmy .current-time{
+  font-size: 35px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.city .date-time .dmy .current-date{
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #e2d6d6;
+}
+.city .date-time .temperature{
+  /* border: 2px solid gold; */
+  float: right;
+  width: 50%;
+  position: relative;
+  left: 10px;
+}
+
+.city .date-time .temperature p{
+  font-size: 80px;
+  font-weight: 100;
+  margin: 0 40px;
+}
+
+.city .date-time .temperature p span{
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.forecast{
+  /* border: 2px solid purple; */
+  width: 40%;
+  float: right;
+  height: 100%;
+}
+
+.forecast .forecast-icon{
+  /* border: 2px solid red; */
+  padding: 25px 0;
+}
+
+.forecast .today-weather h3{
+  text-transform: capitalize;
+  color: #FFF;
+  font-size: 50px;
+  width: 80%;
+  margin: 0 auto 10px;
+  padding-bottom: 10px;
+  /* border-widtsh: thin; */
+  border-bottom: 1px solid #EEE;
+}
+
+.forecast .today-weather ul li{
+  color: #EEE;
+  margin: 0 auto;
+  width: 74%;
+  text-align: left;
+  border-bottom: 1px solid #777;
+  line-height: 40px;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+.forecast .today-weather ul li span{
+  float: right;
+  padding-right: 10px;
+}
+
+.forecast .today-weather ul li:nth-child(5){
+  border-bottom: none;
+}
+
+.forecast .today-weather .city-head{
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  /* position: relative;
+  z-index: 2; */
+}
+
+.forecast .today-weather .search-box{
+  /* border: 2px solid gold; */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.forecast .today-weather .search-box .image-box{
+  background: rgb(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 32px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.forecast .today-weather .search-box .image-box img{
+  width: 60%;
+  cursor: pointer;
+}
+
+.forecast .today-weather .search-box .search-bar{
+  background: transparent;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  font-size: 16px;
+  border-bottom: 1px solid;
+}
+
+.forecast .today-weather .search-box .search-bar::placeholder{
+  color: white;
+}
+
+.forecast .today-weather .search-box .search-bar:focus{
+  outline: none;
+  border-bottom: 1px solid gray;
+  transition: all 1s ease-in-out;
+}
+
+.app-container .city .mb-icon{
+  height: 100%;
+  position: absolute;
+  top: 34%;
+  left: 36%;
+  z-index: 1;
+  display: none;
+}
+
+.app-container .city .mb-icon p{
+  color: white;
+  /* border: 2px solid red; */
+  width: fit-content;
+  position: relative;
+  left: 10%;
+  top: 0%;
+  font-size: 25px;
+}
+

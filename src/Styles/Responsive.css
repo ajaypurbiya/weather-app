@@ -1,0 +1,195 @@
+/*-- Responsive Code --*/
+
+@media screen and (max-width : 1024px) {
+    .main-container {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 966px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .city .date-time .temperature p {
+        font-size: 100px;
+    }
+
+    .city .date-time .dmy {
+        padding-top: 25px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .city .date-time .temperature p {
+        font-size: 80px;
+    }
+
+    .city .date-time .dmy {
+        padding-top: 10px;
+    }
+
+    .forecast .forecast-icon img {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .main-container {
+        width: 95%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .city .date-time .dmy {
+        padding-top: 17px;
+    }
+
+    .city .date-time .temperature p {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    .city {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .city .date-time .temperature {
+        text-align: right;
+    }
+
+    .city .date-time .temperature p {
+        font-size: 100px;
+    }
+
+    .city .date-time .dmy {
+        padding-top: 35px;
+    }
+
+    .forecast .forecast-icon {
+        margin: 10px 0;
+    }
+
+    .forecast {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    h1 {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /*--w3layouts--*/
+    /*--agileits--*/
+    h1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .main-container {
+        margin-bottom: 20px;
+    }
+
+    .forecast .forecast-icon {
+        margin: 40px 0 10px;
+    }
+
+    .forecast .forecast-icon img {
+        width: 100px;
+    }
+
+    .forecast .today-weather h3 {
+        font-size: 40px;
+    }
+
+    .city {
+        min-height: 450px;
+    }
+
+    .city .title h2 {
+        font-size: 25px;
+    }
+
+    .city .title h3 {
+        font-size: 14px;
+    }
+
+    .city .date-time {
+        width: 100%;
+        padding: 0;
+    }
+
+    .city .date-time .dmy {
+        padding: 0;
+        margin-bottom: 35px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .city .date-time .temperature {
+        text-align: center;
+        width: 100%;
+    }
+
+    .city .date-time .temperature p {
+        font-size: 60px;
+        padding-bottom: 15px;
+    }
+
+    .forecast .forecast-icon img {
+        width: 65px;
+    }
+
+    .forecast .today-weather h3 {
+        font-size: 30px;
+    }
+
+    .main-container {
+        height: 60vh;
+        margin-top: 60px;
+    }
+
+    .app-container .city .mb-icon {
+        top: 20% !important;
+        display: block !important;
+    }
+
+    .forecast-icon,
+    .today-weather h3 {
+        display: none;
+    }
+
+    .forecast .today-weather {
+        background-color: rgba(0, 0, 0, 0.73);
+        margin-top: 22px;
+        padding: 25px 0px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .city {
+        min-height: 315px;
+    }
+
+    .city .date-time .dmy {
+        margin-bottom: 30px;
+    }
+
+    .city .date-time {
+        font-size: 18px;
+    }
+
+    .city .date-time .temperature p {
+        padding-bottom: 15px;
+    }
+}
